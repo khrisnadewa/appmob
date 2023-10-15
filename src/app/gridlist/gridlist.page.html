@@ -1,0 +1,94 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>list hewan online</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">ni adalah hewan hewan keren</ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Search</ion-title>
+    </ion-toolbar>
+
+    <!-- GRID -->
+    <ion-grid>
+      <ion-row>
+        <ion-searchbar class="searchbar" animated="true" placeholder="Search For Friends"></ion-searchbar>
+      </ion-row>
+    </ion-grid>
+
+  </ion-header>
+  <ion-content class="content">
+
+    <!-- LIST, IMAGE, BUTTON, TOAST -->
+    <ion-list>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/sapi.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>sapi</h2>
+        </ion-label>
+        <ion-button id="toast1" slot="end" color="primary">Add Friend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast1" duration="3000" [buttons]="toastButton"
+          message="Sapi kurban"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/kambing.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>kambing</h2>
+        </ion-label>
+        <ion-button id="toast2" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast2" duration="3000" [buttons]="toastButton"
+          message="kambing putih"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/monyet.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>monyet</h2>
+        </ion-label>
+        <ion-button id="toast3" slot="end" color="primary">Accept</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast3" duration="3000" [buttons]="toastButton"
+          message="monyet hireng"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/gajah.jpg">
+        </ion-avatar>
+        <ion-label>
+          <h2>gajah</h2>
+        </ion-label>
+        <ion-button id="toast4" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast4" duration="3000" [buttons]="toastButton"
+          message="gajah gede"></ion-toast>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="../../assets/img/badak.jpeg">
+        </ion-avatar>
+        <ion-label>
+          <h2>badak</h2>
+        </ion-label>
+        <ion-button id="toast5" slot="end" color="primary">Unfriend</ion-button>
+        <ion-toast class="toast" position="middle" trigger="toast5" duration="3000" [buttons]="toastButton"
+          message="badak cula 1"></ion-toast>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</div>
